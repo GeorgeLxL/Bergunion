@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+
+    <%- include('../partials/header'); %>
+    <div class="page-title">
+        <h1>Ticket</h1>
+        <h4>チケット</h4>
+    </div>
+    <div class="topdec"></div>
+
+    <div class="page-content">
+        <div class="title">
+            <h2>詳細・申し込み</h2>
+        </div>
+        <div class="content">
+            <table class="table">
+                <thead>
+                    <tr><th>種別</th>
+                    <th>イベント名</th>
+                    <th>有効期限</th>
+                </tr></thead>
+                <tbody>                  
+                    
+                    <tr>
+                        <td>チケット</td>
+                        <td>氷川きよし コンサートツアー2020 それぞれの花のように</td>
+                        <td>2020/11/04(水)</td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+            <form class="form-changes">
+                <div class="form-title">
+                    <h2>申し込み入力</h2>
+                </div>
+                <div class="form-body">
+                    <div class="input-group">
+                        <div class="input-label">名前</div>
+                        <div class="form-input sub-title">: 自動反映</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">枚数</div>
+                        <div class="form-input">
+                            <div class=" form-input">
+                                <select class="form-select"></select>&nbsp;&nbsp;枚
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">電話番号</div>
+                        <div class="form-input sub-title">: 自動反映</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">メールアドレス</div>
+                        <div class="form-input sub-title">: 自動反映</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">特記事項</div>
+                        <div class="form-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <input class="btn-confirm" type="button" value="> 申し込み">
+                </div>
+            </form>
+            <a href="#">&lt; 戻る</a>
+        </div>
+    </div>
+
+    <div class="bottomdec"></div>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

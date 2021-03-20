@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="../../public/css/page.min.css">
+    <style>
+      .mon-logo {
+        margin-bottom: 50px;
+      }
+      .mon-logo img {
+        height: 65px;
+        width: auto;
+      }
+      h2 {
+        color: white;
+        margin-bottom: 0.25em;
+      }
+      .login-page {
+        height: 100vh;
+        width: 100%;
+        background-image: url("/assets/images/home.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &-wrapper {
+          height: inherit;
+          align-items: center;
+
+          .left-col {
+            z-index: 3;
+
+            .page-title {
+              color: $white;
+              h1 {
+                line-height: 1;
+              }
+            }
+          }
+
+          .right-col {
+            .form-wrapper {
+              padding: 100px 50px;
+              .form-title {
+                text-align: center;
+                margin-bottom: 80px;
+
+                p {
+                  font-size: 1.625em;
+                  color: $gray;
+                }
+              }
+              .login-actions {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 1;
+                margin-top: -1.2em;
+                a {
+                  padding: 0;
+                }
+                .mat-checkbox {
+                  padding-bottom: 2px;
+                }
+              }
+              .submit-btn-wrapper {
+                margin-top: 50px;
+                button {
+                  width: 100%;
+                }
+                > div {
+                  text-align: center;
+                  margin-top: 0.75em;
+                  span {
+                    color: $gray;
+                  }
+                  a {
+                    padding: 0;
+                    line-height: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><%= title %></h1>
+      <%- body %>
+    </div>
+  </body>
+</html>

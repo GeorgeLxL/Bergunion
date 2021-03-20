@@ -1,0 +1,37 @@
+
+
+//フォントサイズ指定はrem指定にする
+//10pxを1remとする
+//フォントウェイトの指定は数値で行う
+//Light:300、Regular:400、Medium:500、Bold:700
+
+html {
+font-size: 62.5%;
+}
+
+body{
+font-family: 'Noto Sans JP', sans-serif;
+letter-spacing: 0.2em;
+font-feature-settings: "palt";
+}
+
+
+.br-sp {
+display: none;
+}
+
+.itemCenter{
+text-align: center;
+}
+
+//pcのみ改行させるときは<br class="br-pc">
+//spのみ改行させるときは<br class="br-sp">
+@media screen and (max-width: 850px) {
+.br-pc {
+    display: none;
+}
+
+.br-sp {
+    display: inline-block;
+}
+}

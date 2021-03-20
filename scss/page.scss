@@ -1,0 +1,102 @@
+@import './../../../../../neispuo-theme-styles/variables';
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/assets/images/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &-wrapper {
+    height: inherit;
+    align-items: center;
+    .mon-logo img {
+      height: 65px;
+      width: auto;
+    }
+    .left-col {
+      z-index: 3;
+      .mon-logo {
+        margin-bottom: 50px;
+      }
+      .page-title {
+        color: $white;
+        h1 {
+          line-height: 1;
+        }
+      }
+    }
+    .right-col {
+      .form-wrapper {
+        padding: 100px 50px;
+        .form-title {
+          text-align: center;
+          margin-bottom: 80px;
+          h2 {
+            color: $stratos;
+            margin-bottom: 0.25em;
+          }
+          p {
+            font-size: 1.625em;
+            color: $gray;
+          }
+        }
+        .login-actions {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          line-height: 1;
+          margin-top: -1.2em;
+          a {
+            padding: 0;
+          }
+          .mat-checkbox {
+            padding-bottom: 2px;
+          }
+        }
+        .submit-btn-wrapper {
+          margin-top: 50px;
+          button {
+            width: 100%;
+          }
+          > div {
+            text-align: center;
+            margin-top: 0.75em;
+            span {
+              color: $gray;
+            }
+            a {
+              padding: 0;
+              line-height: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include respond-below(sm) {
+    overflow: auto;
+    &-wrapper {
+      overflow: auto;
+      padding-top: 3em;
+      padding-bottom: 3em;
+      .left-col {
+        .mon-logo {
+          display: none;
+        }
+        .page-title {
+          text-align: center;
+        }
+      }
+      .right-col {
+        .form-wrapper {
+          padding: 40px 16px;
+          .form-title {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}

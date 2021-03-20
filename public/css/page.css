@@ -1,0 +1,79 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/images/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .login-page-wrapper {
+    height: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .login-page-wrapper .mon-logo img {
+      height: 65px;
+      width: auto; }
+    .login-page-wrapper .left-col {
+      z-index: 3; }
+      .login-page-wrapper .left-col .mon-logo {
+        margin-bottom: 50px; }
+      .login-page-wrapper .left-col .page-title {
+        color: #ffffff; }
+        .login-page-wrapper .left-col .page-title h1 {
+          line-height: 1; }
+    .login-page-wrapper .right-col .form-wrapper {
+      padding: 100px 50px; }
+      .login-page-wrapper .right-col .form-wrapper .form-title {
+        text-align: center;
+        margin-bottom: 80px; }
+        .login-page-wrapper .right-col .form-wrapper .form-title h2 {
+          color: #000044;
+          margin-bottom: 0.25em; }
+        .login-page-wrapper .right-col .form-wrapper .form-title p {
+          font-size: 1.625em;
+          color: #8f8f8f; }
+      .login-page-wrapper .right-col .form-wrapper .login-actions {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        line-height: 1;
+        margin-top: -1.2em; }
+        .login-page-wrapper .right-col .form-wrapper .login-actions a {
+          padding: 0; }
+        .login-page-wrapper .right-col .form-wrapper .login-actions .mat-checkbox {
+          padding-bottom: 2px; }
+      .login-page-wrapper .right-col .form-wrapper .submit-btn-wrapper {
+        margin-top: 50px; }
+        .login-page-wrapper .right-col .form-wrapper .submit-btn-wrapper button {
+          width: 100%; }
+        .login-page-wrapper .right-col .form-wrapper .submit-btn-wrapper > div {
+          text-align: center;
+          margin-top: 0.75em; }
+          .login-page-wrapper .right-col .form-wrapper .submit-btn-wrapper > div span {
+            color: #8f8f8f; }
+          .login-page-wrapper .right-col .form-wrapper .submit-btn-wrapper > div a {
+            padding: 0;
+            line-height: 1; }
+  @media (max-width: 767px) {
+    .login-page {
+      overflow: auto; }
+      .login-page-wrapper {
+        overflow: auto;
+        padding-top: 3em;
+        padding-bottom: 3em; }
+        .login-page-wrapper .left-col .mon-logo {
+          display: none; }
+        .login-page-wrapper .left-col .page-title {
+          text-align: center; }
+        .login-page-wrapper .right-col .form-wrapper {
+          padding: 40px 16px; }
+          .login-page-wrapper .right-col .form-wrapper .form-title {
+            margin-bottom: 50px; } }

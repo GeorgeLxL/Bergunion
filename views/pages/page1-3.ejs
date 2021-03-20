@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+
+    <%- include('../partials/header1'); %>
+    <div class="page-title">
+        <h1>Members Area</h1>
+        <h4>組合員専用ページ</h4>
+    </div>
+    <div class="topdec"></div>
+    <div class="page-content">
+        <div class="content-no-border">
+            <form class="form-changes">
+                <div class="form-title">
+                    <h2>パスワードを忘れた方</h2>
+                </div>
+                <div class="form-body">
+                    <div class="input-group">
+                        <div class="input-label">社員番号</div>
+                        <div class="form-input">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-label">生年月日</div>
+                        <div class="form-input" style="display: flex;">
+                            <div style="width:33%; height: 50px;">
+                                <select style="margin-top: 5px; width: 70%; height: 30px;"></select>
+                                <span>年</span>
+                            </div>
+                            <div style="width:33%; height: 50px;">
+                                <select style="margin-top: 5px; width: 70%; height: 30px;"></select>
+                                <span>月</span>
+                            </div>
+                            <div style="width:33%; height: 50px;">
+                                <select style="margin-top: 5px; width: 70%; height: 30px;"></select>
+                                <span>日</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-label">メールアドレス</div>
+                        <div class="form-input">
+                            <input type="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <input class="btn yellow" type="button" value="> 確認画面" >
+                </div><br><br><br>
+            </form>
+            <a href="#">< 戻る</a> 
+        </div>
+    </div>
+    <div class="bottomdec"></div>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>
